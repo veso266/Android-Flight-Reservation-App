@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorLightGray"
-    tools:context="com.mentesnot.easytravel.controllers.OutboundFlightListActivity">
+    android:background="@color/colorBackground"
+    tools:context="si.wolf.planea.controllers.OutboundFlightListActivity">
 
 
     <RelativeLayout
@@ -23,7 +23,7 @@
                 android:id="@+id/outboundFlightList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:divider="@color/colorLightGray"
+                android:divider="@color/colorBackground"
                 android:dividerHeight="10dp"/>
 
             <TextView
@@ -33,7 +33,7 @@
                 android:background="@drawable/bgrounded"
                 android:padding="15dp"
                 android:textSize="18sp"
-                android:text="The specified round flight is not available at this time. Please try again with a different combination. " />
+                android:text="Obojesmeni polet, ki ste ga želeli, zaenkrat ni navoljo, prosim kaj drugega. " />
 
         </LinearLayout>
 

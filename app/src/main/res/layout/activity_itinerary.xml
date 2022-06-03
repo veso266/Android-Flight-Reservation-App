@@ -7,8 +7,8 @@
     android:id="@+id/itineraryContainer"
     android:orientation="vertical"
     android:padding="15dp"
-    android:background="@color/colorLightGray"
-    tools:context="com.mentesnot.easytravel.controllers.ItineraryActivity">
+    android:background="@color/colorBackground"
+    tools:context="si.wolf.planea.controllers.ItineraryActivity">
 
 
 
@@ -16,7 +16,7 @@
                 android:id="@+id/itinerary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:divider="@color/colorLightGray"
+                android:divider="@color/colorBackground"
                 android:dividerHeight="10dp"/>
 
     <TextView
@@ -26,6 +26,6 @@
         android:background="@drawable/bgrounded"
         android:padding="15dp"
         android:textSize="18sp"
-        android:text="You have no booked flights at this time." />
+        android:text="Nimate naročenih poletov. " />
 
 </LinearLayout>

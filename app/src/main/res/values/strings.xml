@@ -1,30 +1,30 @@
 <resources>
-    <string name="app_name">EasyTravel</string>
+    <string name="app_name">Letalska Agencija</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_login">sign in</string>
+    <string name="title_activity_login">prijavi se</string>
 
 
     <string name="prompt_email">Email</string>
-    <string name="prompt_phone">Phone</string>
-    <string name="prompt_credit_card">Credit Card</string>
-    <string name="prompt_password">Password</string>
-    <string name="prompt_confirm_password">Confirm Password</string>
-    <string name="action_login">Login</string>
-    <string name="action_register">Register</string>
+    <string name="prompt_phone">Telefon</string>
+    <string name="prompt_birthday">Datum rojstva</string>
+    <string name="prompt_credit_card">Številka Kartice</string>
+    <string name="prompt_password">Geslo</string>
+    <string name="prompt_confirm_password">Ponovi geslo</string>
+    <string name="action_login">Prijava</string>
+    <string name="action_register">Registracija</string>
 
 
     <string name="prompt_flyingfrom">Flying from</string>
     <string name="prompt_flyingto">Flying to</string>
-    <string name="prompt_departure_date">Departure date</string>
-    <string name="prompt_return_date">Return date</string>
-    <string name="prompt_traveller">Select Traveller</string>
-    <string name="prompt_class">Select class</string>
-    <string name="prompt_first_name">First Name</string>
-    <string name="prompt_last_name">Last Name</string>
+    <string name="prompt_departure_date">Datum odhoda</string>
+    <string name="prompt_return_date">Datum prihoda</string>
+    <string name="prompt_traveller">Izberi potnike</string>
+    <string name="prompt_class">Izberi razred</string>
+    <string name="prompt_first_name">Ime</string>
+    <string name="prompt_last_name">Priimek</string>
     <string name="alert_dialog_two_buttons_title">My Title</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -34,6 +34,30 @@
         <item>Fare</item>
         <item>Travel time</item>
     </string-array>
+
+    <!-- Settings page -->
+    <string name="nav_settings">Nastavitve</string>
+    <string name="ui_setting_title">Videz</string>
+<!--
+    <string name="ui_enabled_title">Background Notifications</string>
+    <string name="ui_enabled_summary">When enabled, you will receive background notifications from Facebook.</string>
+-->
+    <string name="ui_dark_title">Videz Aplikacije</string>
+    <string name="ui_dark_summary">Zamenjaj videz aplikacije, da se bolje prilega očem.</string>
+    <string-array name="ui_dark">
+        <item>Privzeta</item>
+        <item>Svetla</item>
+        <item>Temna</item>
+    </string-array>
+    <string-array name="ui_dark_values">
+        <item>MODE_NIGHT_FOLLOW_SYSTEM</item>
+        <item>MODE_NIGHT_NO</item>
+        <item>MODE_NIGHT_YES</item>
+    </string-array>
+
+    <!--
+    <string name="ui_vibration_title">Vibrate</string>
+    <string name="ui_vibration_summary">When enabled, notifications will make your device vibrate.</string>-->
 
 
 </resources>

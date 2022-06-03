@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mentesnot.easytravel.controllers.RegisterActivity">
+    tools:context="si.wolf.planea.controllers.RegisterActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -93,6 +93,24 @@
                     android:layout_height="wrap_content">
 
                     <EditText
+                        android:id="@+id/txtbirthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_birthday"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
                         android:id="@+id/txtCreditCard"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -139,7 +157,7 @@
                     android:id="@+id/linkLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Already have an account? Login"
+                    android:text="Ali že imate račun? Prijavite se"
                     android:gravity="center"
                     android:layout_marginTop="30dp"/>
 

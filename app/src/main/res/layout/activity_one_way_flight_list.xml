@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorLightGray"
-    tools:context="com.mentesnot.easytravel.controllers.OneWayFlightListActivity">
+    android:background="@color/colorBackground"
+    tools:context="si.wolf.planea.controllers.OneWayFlightListActivity">
 
 
     <RelativeLayout
@@ -26,7 +26,7 @@
                 android:id="@+id/onewayFlightList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:divider="@color/colorLightGray"
+                android:divider="@color/colorBackground"
                 android:dividerHeight="10dp"/>
 
             <TextView
@@ -36,7 +36,7 @@
                 android:background="@drawable/bgrounded"
                 android:padding="15dp"
                 android:textSize="18sp"
-                android:text="The specified flight is not available at this time. Please try again later. " />
+                android:text="Polet ni na voljo, prosim poiskusite kasneje " />
 
 
 

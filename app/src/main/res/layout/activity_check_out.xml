@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorLightGray"
+    android:background="@color/colorBackground"
     android:id="@+id/fragment_container"
     android:orientation="vertical"
-    tools:context="com.mentesnot.easytravel.controllers.CheckOutActivity">
+    tools:context="si.wolf.planea.controllers.CheckOutActivity">
 
 
 

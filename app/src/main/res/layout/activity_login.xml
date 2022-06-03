@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="com.mentesnot.easytravel.controllers.LoginActivity">
+    tools:context="si.wolf.planea.controllers.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -79,7 +79,7 @@
                     android:id="@+id/linkRegister"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Don't have an account? Register"
+                    android:text="Nimate še računa? Registrirajte se"
                     android:gravity="center"
                     android:layout_marginTop="30dp"/>
 

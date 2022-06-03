@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     android:id="@+id/launch"
     android:orientation="vertical"
-    android:background="@color/colorOrange"
+    android:background="@color/colorMediumGray"
     android:gravity="center"
-    tools:context="com.mentesnot.easytravel.controllers.LaunchActivity">
+    tools:context="si.wolf.planea.controllers.LaunchActivity">
 
     <ImageView
         android:id="@+id/imageView3"

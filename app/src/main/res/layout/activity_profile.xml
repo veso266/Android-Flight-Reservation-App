@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorLightGray"
-    tools:context="com.mentesnot.easytravel.controllers.ProfileActivity">
+    android:background="@color/colorBackground"
+    tools:context="si.wolf.planea.controllers.ProfileActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
                 android:layout_weight="2"
                 android:gravity="center"
                 android:layout_marginBottom="16dp"
-                android:background="@color/backgroundDefault">
+                android:background="@color/colorForeground">
 
 
 
@@ -63,7 +63,7 @@
                 android:padding="15dp"
                 android:gravity="center"
                 android:layout_marginBottom="16dp"
-                android:background="@color/backgroundDefault">
+                android:background="@color/colorForeground">
 
                 <TextView
                     android:id="@+id/profileHeading"
@@ -72,7 +72,7 @@
                     android:layout_marginBottom="16dp"
                     android:textSize="25sp"
                     android:fontFamily="sans-serif-thin"
-                    android:text="Account Information" />
+                    android:text="Informacije o profilu" />
 
 
                 <TextView
@@ -80,33 +80,39 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="FirstName: John"/>
+                    android:text="Ime: Mitja"/>
 
                 <TextView
                     android:id="@+id/txtClientLastName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="Las name: Doe"/>
+                    android:text="Priimek: Kocjančič"/>
                 <TextView
                     android:id="@+id/txtClientEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="Email: john.doe@gmail.com"/>
+                    android:text="Email: veso266@gmail.com"/>
                 <TextView
                     android:id="@+id/txtClientPhone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="Email: 4162354874"/>
+                    android:text="Telefon: 041341513"/>
                 <TextView
                     android:id="@+id/txtClientCreditCard"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="Credit Card: **** **** **** 2048"/>
+                    android:text="Številka kartice: **** **** **** 2048"/>
 
+                <TextView
+                    android:id="@+id/txtClientBirthsDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Rojstni dan: 1998-06-26"/>
 
                 <ImageButton
                     android:id="@+id/btnEditProfile"
@@ -119,6 +125,17 @@
 
             </LinearLayout>
 
+            <Button
+                android:id="@+id/btnExtraPersons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/primaryBlue"
+                android:fontFamily="sans-serif"
+                android:text="Dodatne osebe"
+                android:textAllCaps="false"
+                android:textColor="@color/colorInverted"
+                android:textSize="18sp" />
 
         </LinearLayout>
 

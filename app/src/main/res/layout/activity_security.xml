@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mentesnot.easytravel.controllers.SecurityActivity">
+    tools:context="si.wolf.planea.controllers.SecurityActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
                     android:fontFamily="sans-serif-thin"
                     android:textSize="20sp"
                     android:layout_marginBottom="16dp"
-                    android:text="Change Password" />
+                    android:text="Spremenite geslo" />
 
 
 
@@ -39,7 +39,7 @@
                         android:id="@+id/txtOldPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Old Password"
+                        android:hint="Staro geslo"
                         android:inputType="text"
                         android:maxLines="1"
                         android:singleLine="true" />
@@ -53,7 +53,7 @@
                         android:id="@+id/txtNewPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="New Password"
+                        android:hint="Novo geslo"
                         android:inputType="text"
                         android:maxLines="1"
                         android:singleLine="true" />
@@ -67,7 +67,7 @@
                         android:id="@+id/txtConfirmPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Confirm Password"
+                        android:hint="Ponovite gelos"
                         android:inputType="text"
                         android:maxLines="1"
                         android:singleLine="true" />
@@ -92,7 +92,7 @@
             android:layout_alignParentBottom="true"
             android:background="@color/primaryBlue"
             android:textColor="@color/colorInverted"
-            android:text="Save"
+            android:text="Shrani"
             android:textSize="18sp"
             android:textAllCaps="false"
             android:fontFamily="sans-serif"/>

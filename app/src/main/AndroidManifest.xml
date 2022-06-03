@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mentesnot.easytravel">
+    package="si.wolf.planea">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -11,11 +12,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:launchMode="singleTask"
         android:theme="@style/AppTheme">
-
-
         <activity
-            android:name="com.mentesnot.easytravel.controllers.LaunchActivity"
+            android:name="si.wolf.planea.controllers.LaunchActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,118 +24,150 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.mentesnot.easytravel.controllers.MainActivity"
+            android:name="si.wolf.planea.controllers.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.mentesnot.easytravel.controllers.AboutActivity"
-            android:label="About"
-            android:parentActivityName="com.mentesnot.easytravel.controllers.MainActivity">
+            android:name="si.wolf.planea.controllers.AboutActivity"
+            android:label="O Aplikaciji"
+            android:parentActivityName="si.wolf.planea.controllers.MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mentesnot.easytravel.controllers.MainActivity" />
+                android:value="si.wolf.planea.controllers.MainActivity" />
         </activity>
         <activity
-            android:name="com.mentesnot.easytravel.controllers.SecurityActivity"
-            android:label="Security Settings"
-            android:parentActivityName="com.mentesnot.easytravel.controllers.MainActivity"
+            android:name="si.wolf.planea.controllers.SecurityActivity"
+            android:label="Varnostne nastavitve"
+            android:parentActivityName="si.wolf.planea.controllers.MainActivity"
             android:windowSoftInputMode="stateHidden">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mentesnot.easytravel.controllers.MainActivity" />
+                android:value="si.wolf.planea.controllers.MainActivity" />
         </activity>
         <activity
-            android:name="com.mentesnot.easytravel.controllers.ProfileActivity"
-            android:label="Profile"
-            android:parentActivityName="com.mentesnot.easytravel.controllers.MainActivity">
+            android:name="si.wolf.planea.controllers.ProfileActivity"
+            android:label="Profil"
+            android:parentActivityName="si.wolf.planea.controllers.MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mentesnot.easytravel.controllers.MainActivity" />
+                android:value="si.wolf.planea.controllers.MainActivity" />
         </activity>
         <activity
-            android:name="com.mentesnot.easytravel.controllers.ItineraryActivity"
-            android:label="Itinerary"
-            android:parentActivityName="com.mentesnot.easytravel.controllers.MainActivity">
+            android:name="si.wolf.planea.controllers.SettingsActivity"
+            android:label="Nastavitve"
+            android:parentActivityName="si.wolf.planea.controllers.MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mentesnot.easytravel.controllers.MainActivity" />
+                android:value="si.wolf.planea.controllers.MainActivity" />
         </activity>
         <activity
-            android:name="com.mentesnot.easytravel.controllers.RegisterActivity"
+            android:name="si.wolf.planea.controllers.ItineraryActivity"
+            android:label="Načrt poti"
+            android:parentActivityName="si.wolf.planea.controllers.MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="si.wolf.planea.controllers.MainActivity" />
+        </activity>
+        <activity
+            android:name="si.wolf.planea.controllers.RegisterActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.mentesnot.easytravel.controllers.LoginActivity"
+            android:name="si.wolf.planea.controllers.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.mentesnot.easytravel.controllers.CheckOutActivity"
-            android:label="Checkout"
-            android:parentActivityName="com.mentesnot.easytravel.controllers.MainActivity">
+            android:name="si.wolf.planea.controllers.CheckOutActivity"
+            android:label="Plačilo"
+            android:parentActivityName="si.wolf.planea.controllers.MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mentesnot.easytravel.controllers.MainActivity" />
+                android:value="si.wolf.planea.controllers.MainActivity" />
         </activity>
         <activity
-            android:name="com.mentesnot.easytravel.controllers.OneWayFlightListActivity"
-            android:label="Flight list"
-            android:parentActivityName="com.mentesnot.easytravel.controllers.MainActivity">
+            android:name="si.wolf.planea.controllers.OneWayFlightListActivity"
+            android:label="Seznam enosmernih poletov"
+            android:parentActivityName="si.wolf.planea.controllers.MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mentesnot.easytravel.controllers.MainActivity" />
+                android:value="si.wolf.planea.controllers.MainActivity" />
         </activity>
         <activity
-            android:name="com.mentesnot.easytravel.controllers.ReturnFlightListActivity"
-            android:label="Rlight list"
-            android:parentActivityName="com.mentesnot.easytravel.controllers.OutboundFlightListActivity">
+            android:name="si.wolf.planea.controllers.ReturnFlightListActivity"
+            android:label="Seznam povratnih poletov"
+            android:parentActivityName="si.wolf.planea.controllers.OutboundFlightListActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mentesnot.easytravel.controllers.MainActivity" />
+                android:value="si.wolf.planea.controllers.MainActivity" />
         </activity>
         <activity
-            android:name="com.mentesnot.easytravel.controllers.OutboundFlightListActivity"
-            android:label="Flight list"
-            android:parentActivityName="com.mentesnot.easytravel.controllers.MainActivity">
+            android:name="si.wolf.planea.controllers.OutboundFlightListActivity"
+            android:label="Seznam poletov"
+            android:parentActivityName="si.wolf.planea.controllers.MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mentesnot.easytravel.controllers.MainActivity" />
+                android:value="si.wolf.planea.controllers.MainActivity" />
         </activity>
         <activity
-            android:name="com.mentesnot.easytravel.controllers.FlightDetailActivity"
-            android:label="Flight Detail"
-            android:parentActivityName="com.mentesnot.easytravel.controllers.ItineraryActivity">
+            android:name="si.wolf.planea.controllers.FlightDetailActivity"
+            android:label="Podrobnosti leta"
+            android:parentActivityName="si.wolf.planea.controllers.ItineraryActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mentesnot.easytravel.controllers.MainActivity" />
+                android:value="si.wolf.planea.controllers.MainActivity" />
         </activity>
-        <activity android:name="com.mentesnot.easytravel.controllers.EditProfileActivity"
-            android:label="Edit Profile"
-            android:parentActivityName="com.mentesnot.easytravel.controllers.ProfileActivity"
+        <activity android:name="si.wolf.planea.controllers.EditProfileActivity"
+            android:label="Urejanje Profila"
+            android:parentActivityName="si.wolf.planea.controllers.ProfileActivity"
             android:windowSoftInputMode="stateHidden">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mentesnot.easytravel.controllers.MainActivity" />
+                android:value="si.wolf.planea.controllers.MainActivity" />
+
+        </activity>
+        <activity android:name="si.wolf.planea.controllers.ExtraPersonActivity"
+            android:label="Dodatni potniki"
+            android:parentActivityName="si.wolf.planea.controllers.ProfileActivity"
+            android:windowSoftInputMode="stateHidden">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="si.wolf.planea.controllers.MainActivity" />
+
+        </activity>
+        <activity android:name="si.wolf.planea.controllers.ExtraPersonAddActivity"
+            android:label="Dodaj Dodatnega potnika"
+            android:parentActivityName="si.wolf.planea.controllers.ExtraPersonActivity"
+            android:windowSoftInputMode="stateHidden">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="si.wolf.planea.controllers.MainActivity" />
 
         </activity>
     </application>

@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorLightGray"
-    tools:context="com.mentesnot.easytravel.controllers.ReturnFlightListActivity">
+    android:background="@color/colorBackground"
+    tools:context="si.wolf.planea.controllers.ReturnFlightListActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:id="@+id/returnFlightList"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:divider="@color/colorLightGray"
+                android:divider="@color/colorBackground"
                 android:dividerHeight="10dp"/>
 
             <TextView

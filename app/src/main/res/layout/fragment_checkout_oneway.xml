@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mentesnot.easytravel.controllers.CheckoutOnewayFragment">
+    tools:context="si.wolf.planea.controllers.CheckoutOnewayFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Air Canada one way"
+                            android:text="Adria Airways -- Enosmerna vozovnica"
                             android:textAllCaps="true"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -48,7 +48,7 @@
                             android:layout_below="@+id/txtCheckoutAirline"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="Flight No: "
+                            android:text="Številka poleta: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -69,7 +69,7 @@
                             android:layout_below="@+id/flightNo"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="Origin: "
+                            android:text="Izvor: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -81,7 +81,7 @@
                             android:layout_alignParentRight="true"
                             android:layout_alignParentEnd="true"
                             android:layout_alignBaseline="@+id/origin"
-                            android:text="Toronto"
+                            android:text="Ljubljana"
                             android:textSize="16sp" />
 
                         <TextView
@@ -91,7 +91,7 @@
                             android:layout_below="@+id/origin"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="Destination: "
+                            android:text="Dstinacija: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -102,7 +102,7 @@
                             android:layout_alignParentRight="true"
                             android:layout_alignParentEnd="true"
                             android:layout_alignBaseline="@+id/destination"
-                            android:text="Ottawa"
+                            android:text="Zagreb"
                             android:textSize="16sp" />
 
                         <TextView
@@ -112,7 +112,7 @@
                             android:layout_below="@+id/destination"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="Departure Date: "
+                            android:text="Datum odhoda: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -133,7 +133,7 @@
                             android:layout_below="@+id/departureDate"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="Arrival Date: "
+                            android:text="Datum prihoda: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -154,7 +154,7 @@
                             android:layout_below="@+id/arrivalDate"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="Departure time: "
+                            android:text="Čas odhoda: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -176,7 +176,7 @@
                             android:layout_below="@+id/departureTime"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="Arrival time: "
+                            android:text="Čas prihoda: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -197,7 +197,7 @@
                             android:layout_below="@+id/arrivalTime"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="Flight duration: "
+                            android:text="Trajanje leta: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -219,7 +219,7 @@
                             android:layout_below="@+id/duration"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="Flight class: "
+                            android:text="Razred: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -230,7 +230,7 @@
                             android:layout_alignParentRight="true"
                             android:layout_alignParentEnd="true"
                             android:layout_alignBaseline="@+id/flightClass"
-                            android:text="Economy"
+                            android:text="Ekonomski"
                             android:textSize="16sp" />
 
 
@@ -258,7 +258,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="# of traveller: "
+                            android:text="Število potnikov: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -279,7 +279,7 @@
                             android:layout_below="@+id/traveller"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="Fare: "
+                            android:text="Cena: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -290,7 +290,7 @@
                             android:layout_alignParentRight="true"
                             android:layout_alignParentEnd="true"
                             android:layout_alignBaseline="@+id/fare"
-                            android:text="$350"
+                            android:text="350€"
                             android:textSize="16sp" />
 
                         <TextView
@@ -300,7 +300,7 @@
                             android:layout_below="@+id/fare"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentLeft="true"
-                            android:text="Total fare: "
+                            android:text="Skupna cena: "
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -311,7 +311,7 @@
                             android:layout_alignParentRight="true"
                             android:layout_alignParentEnd="true"
                             android:layout_alignBaseline="@+id/totalfare"
-                            android:text="$350"
+                            android:text="350€"
                             android:textSize="16sp" />
 
                     </RelativeLayout>
@@ -332,7 +332,7 @@
             android:layout_alignParentBottom="true"
             android:background="@color/primaryBlue"
             android:fontFamily="sans-serif"
-            android:text="Book flight"
+            android:text="Rezerviraj polet"
             android:textAllCaps="false"
             android:textColor="@color/colorInverted"
             android:textSize="18sp" />
